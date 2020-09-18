@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITvitea_opdrachten_vlaggen_juiste
+namespace Boter_kaas_eieren
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace ITvitea_opdrachten_vlaggen_juiste
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new BoterKaasEieren());
         }
     }
 }

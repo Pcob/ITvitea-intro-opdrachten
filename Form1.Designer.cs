@@ -1,6 +1,6 @@
-﻿namespace ITvitea_opdrachten_vlaggen_juiste
+﻿namespace Boter_kaas_eieren
 {
-    partial class Form1
+    partial class BoterKaasEieren
     {
         /// <summary>
         /// Required designer variable.
@@ -28,106 +28,207 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblQuestion = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.overHetSpelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.A1 = new System.Windows.Forms.Button();
+            this.C3 = new System.Windows.Forms.Button();
+            this.C2 = new System.Windows.Forms.Button();
+            this.C1 = new System.Windows.Forms.Button();
+            this.B3 = new System.Windows.Forms.Button();
+            this.A3 = new System.Windows.Forms.Button();
+            this.B2 = new System.Windows.Forms.Button();
+            this.B1 = new System.Windows.Forms.Button();
+            this.A2 = new System.Windows.Forms.Button();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblQuestion
+            // menuStrip1
             // 
-            this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestion.Location = new System.Drawing.Point(86, 428);
-            this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(854, 37);
-            this.lblQuestion.TabIndex = 1;
-            this.lblQuestion.Text = "Vraag 1";
-            this.lblQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(286, 28);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // button1
+            // fileToolStripMenuItem
             // 
-            this.button1.Location = new System.Drawing.Point(91, 484);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(364, 78);
-            this.button1.TabIndex = 2;
-            this.button1.Tag = "1";
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.checkAnswerEvent);
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newGameToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
             // 
-            // button2
+            // newGameToolStripMenuItem
             // 
-            this.button2.Location = new System.Drawing.Point(576, 484);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(364, 78);
-            this.button2.TabIndex = 3;
-            this.button2.Tag = "2";
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.checkAnswerEvent);
+            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newGameToolStripMenuItem.Text = "New Game";
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
-            // button3
+            // exitToolStripMenuItem
             // 
-            this.button3.Location = new System.Drawing.Point(91, 610);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(364, 78);
-            this.button3.TabIndex = 4;
-            this.button3.Tag = "3";
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.checkAnswerEvent);
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // button4
+            // helpToolStripMenuItem
             // 
-            this.button4.Location = new System.Drawing.Point(576, 610);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(364, 78);
-            this.button4.TabIndex = 5;
-            this.button4.Tag = "4";
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.checkAnswerEvent);
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.overHetSpelToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Text = "Help";
             // 
-            // pictureBox1
+            // overHetSpelToolStripMenuItem
             // 
-            this.pictureBox1.Image = global::ITvitea_opdrachten_vlaggen_juiste.Properties.Resources.VlagBurgarije;
-            this.pictureBox1.Location = new System.Drawing.Point(135, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(821, 423);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.overHetSpelToolStripMenuItem.Name = "overHetSpelToolStripMenuItem";
+            this.overHetSpelToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.overHetSpelToolStripMenuItem.Text = "Over het spel";
+            this.overHetSpelToolStripMenuItem.Click += new System.EventHandler(this.overHetSpelToolStripMenuItem_Click);
             // 
-            // Form1
+            // A1
+            // 
+            this.A1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A1.Location = new System.Drawing.Point(23, 43);
+            this.A1.Name = "A1";
+            this.A1.Size = new System.Drawing.Size(75, 75);
+            this.A1.TabIndex = 1;
+            this.A1.UseVisualStyleBackColor = true;
+            this.A1.Click += new System.EventHandler(this.button_click);
+            // 
+            // C3
+            // 
+            this.C3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3.Location = new System.Drawing.Point(185, 205);
+            this.C3.Name = "C3";
+            this.C3.Size = new System.Drawing.Size(75, 75);
+            this.C3.TabIndex = 2;
+            this.C3.UseVisualStyleBackColor = true;
+            this.C3.Click += new System.EventHandler(this.button_click);
+            // 
+            // C2
+            // 
+            this.C2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C2.Location = new System.Drawing.Point(104, 205);
+            this.C2.Name = "C2";
+            this.C2.Size = new System.Drawing.Size(75, 75);
+            this.C2.TabIndex = 3;
+            this.C2.UseVisualStyleBackColor = true;
+            this.C2.Click += new System.EventHandler(this.button_click);
+            // 
+            // C1
+            // 
+            this.C1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C1.Location = new System.Drawing.Point(23, 205);
+            this.C1.Name = "C1";
+            this.C1.Size = new System.Drawing.Size(75, 75);
+            this.C1.TabIndex = 4;
+            this.C1.UseVisualStyleBackColor = true;
+            this.C1.Click += new System.EventHandler(this.button_click);
+            // 
+            // B3
+            // 
+            this.B3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B3.Location = new System.Drawing.Point(185, 124);
+            this.B3.Name = "B3";
+            this.B3.Size = new System.Drawing.Size(75, 75);
+            this.B3.TabIndex = 5;
+            this.B3.UseVisualStyleBackColor = true;
+            this.B3.Click += new System.EventHandler(this.button_click);
+            // 
+            // A3
+            // 
+            this.A3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A3.Location = new System.Drawing.Point(185, 43);
+            this.A3.Name = "A3";
+            this.A3.Size = new System.Drawing.Size(75, 75);
+            this.A3.TabIndex = 6;
+            this.A3.UseVisualStyleBackColor = true;
+            this.A3.Click += new System.EventHandler(this.button_click);
+            // 
+            // B2
+            // 
+            this.B2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B2.Location = new System.Drawing.Point(104, 124);
+            this.B2.Name = "B2";
+            this.B2.Size = new System.Drawing.Size(75, 75);
+            this.B2.TabIndex = 7;
+            this.B2.UseVisualStyleBackColor = true;
+            this.B2.Click += new System.EventHandler(this.button_click);
+            // 
+            // B1
+            // 
+            this.B1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B1.Location = new System.Drawing.Point(23, 124);
+            this.B1.Name = "B1";
+            this.B1.Size = new System.Drawing.Size(75, 75);
+            this.B1.TabIndex = 8;
+            this.B1.UseVisualStyleBackColor = true;
+            this.B1.Click += new System.EventHandler(this.button_click);
+            // 
+            // A2
+            // 
+            this.A2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A2.Location = new System.Drawing.Point(104, 43);
+            this.A2.Name = "A2";
+            this.A2.Size = new System.Drawing.Size(75, 75);
+            this.A2.TabIndex = 9;
+            this.A2.UseVisualStyleBackColor = true;
+            this.A2.Click += new System.EventHandler(this.button_click);
+            // 
+            // BoterKaasEieren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1044, 726);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblQuestion);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "Vlaggen van wereld";
-            this.Click += new System.EventHandler(this.checkAnswerEvent);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ClientSize = new System.Drawing.Size(286, 301);
+            this.Controls.Add(this.A2);
+            this.Controls.Add(this.B1);
+            this.Controls.Add(this.B2);
+            this.Controls.Add(this.A3);
+            this.Controls.Add(this.B3);
+            this.Controls.Add(this.C1);
+            this.Controls.Add(this.C2);
+            this.Controls.Add(this.C3);
+            this.Controls.Add(this.A1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "BoterKaasEieren";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BoterKaasEieren";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblQuestion;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem overHetSpelToolStripMenuItem;
+        private System.Windows.Forms.Button A1;
+        private System.Windows.Forms.Button C3;
+        private System.Windows.Forms.Button C2;
+        private System.Windows.Forms.Button C1;
+        private System.Windows.Forms.Button B3;
+        private System.Windows.Forms.Button A3;
+        private System.Windows.Forms.Button B2;
+        private System.Windows.Forms.Button B1;
+        private System.Windows.Forms.Button A2;
     }
 }
 
