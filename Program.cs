@@ -1,22 +1,88 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace Boter_kaas_eieren
+namespace MorseVertaler
 {
-    static class Program
+    class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        static string morseEncode(char x)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BoterKaasEieren());
+
+         
+            switch (x)
+            {
+                case 'a':
+                    return ".-";
+                case 'b':
+                    return "-...";
+                case 'c':
+                    return "-.-.";
+                case 'd':
+                    return "-..";
+                case 'e':
+                    return ".";
+                case 'f':
+                    return "..-.";
+                case 'g':
+                    return "--.";
+                case 'h':
+                    return "....";
+                case 'i':
+                    return "..";
+                case 'j':
+                    return ".---";
+                case 'k':
+                    return "-.-";
+                case 'l':
+                    return ".-..";
+                case 'm':
+                    return "--";
+                case 'n':
+                    return "-.";
+                case 'o':
+                    return "---";
+                case 'p':
+                    return ".--.";
+                case 'q':
+                    return "--.-";
+                case 'r':
+                    return ".-.";
+                case 's':
+                    return "...";
+                case 't':
+                    return "-";
+                case 'u':
+                    return "..-";
+                case 'v':
+                    return "...-";
+                case 'w':
+                    return ".--";
+                case 'x':
+                    return "-..-";
+                case 'y':
+                    return "-.--"; 
+                case 'z':
+                    return "--..";
+            }
+            return "";
+        }
+
+        static void morseCode(string s)
+        {
+           
+            for (int i = 0; i < s.Length; i++)
+                Console.Write(morseEncode(s[i]));
+            Console.WriteLine();
+            Console.ReadKey();
+        }
+
+      
+        public static void Main()
+        {
+            string s = Console.ReadLine();
+            morseCode(s);
         }
     }
 }
+
+
+
