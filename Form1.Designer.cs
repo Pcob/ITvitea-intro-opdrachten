@@ -1,6 +1,6 @@
-﻿namespace Encryptie
+﻿namespace Boter_kaas_eieren
 {
-    partial class Form1
+    partial class BoterKaasEieren
     {
         /// <summary>
         /// Required designer variable.
@@ -28,110 +28,185 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbPath = new System.Windows.Forms.TextBox();
-            this.btBrowse = new System.Windows.Forms.Button();
-            this.rbEncrypt = new System.Windows.Forms.RadioButton();
-            this.rbDecrypt = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbPassword = new System.Windows.Forms.TextBox();
-            this.btStart = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.overHetSpelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.A1 = new System.Windows.Forms.Button();
+            this.C3 = new System.Windows.Forms.Button();
+            this.C2 = new System.Windows.Forms.Button();
+            this.C1 = new System.Windows.Forms.Button();
+            this.B3 = new System.Windows.Forms.Button();
+            this.A3 = new System.Windows.Forms.Button();
+            this.B2 = new System.Windows.Forms.Button();
+            this.B1 = new System.Windows.Forms.Button();
+            this.A2 = new System.Windows.Forms.Button();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // menuStrip1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "File path";
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(286, 28);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // tbPath
+            // fileToolStripMenuItem
             // 
-            this.tbPath.Location = new System.Drawing.Point(16, 34);
-            this.tbPath.Name = "tbPath";
-            this.tbPath.ReadOnly = true;
-            this.tbPath.Size = new System.Drawing.Size(687, 22);
-            this.tbPath.TabIndex = 1;
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newGameToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
             // 
-            // btBrowse
+            // newGameToolStripMenuItem
             // 
-            this.btBrowse.Location = new System.Drawing.Point(710, 32);
-            this.btBrowse.Name = "btBrowse";
-            this.btBrowse.Size = new System.Drawing.Size(75, 24);
-            this.btBrowse.TabIndex = 2;
-            this.btBrowse.Text = "Browse";
-            this.btBrowse.UseVisualStyleBackColor = true;
-            this.btBrowse.Click += new System.EventHandler(this.btBrowse_Click);
+            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newGameToolStripMenuItem.Text = "New Game";
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
-            // rbEncrypt
+            // exitToolStripMenuItem
             // 
-            this.rbEncrypt.AutoSize = true;
-            this.rbEncrypt.Location = new System.Drawing.Point(16, 72);
-            this.rbEncrypt.Name = "rbEncrypt";
-            this.rbEncrypt.Size = new System.Drawing.Size(77, 21);
-            this.rbEncrypt.TabIndex = 3;
-            this.rbEncrypt.TabStop = true;
-            this.rbEncrypt.Text = "Encrypt";
-            this.rbEncrypt.UseVisualStyleBackColor = true;
-            this.rbEncrypt.CheckedChanged += new System.EventHandler(this.rbEncrypt_CheckedChanged);
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // rbDecrypt
+            // helpToolStripMenuItem
             // 
-            this.rbDecrypt.AutoSize = true;
-            this.rbDecrypt.Location = new System.Drawing.Point(99, 72);
-            this.rbDecrypt.Name = "rbDecrypt";
-            this.rbDecrypt.Size = new System.Drawing.Size(78, 21);
-            this.rbDecrypt.TabIndex = 4;
-            this.rbDecrypt.TabStop = true;
-            this.rbDecrypt.Text = "Decrypt";
-            this.rbDecrypt.UseVisualStyleBackColor = true;
-            this.rbDecrypt.CheckedChanged += new System.EventHandler(this.rbDecrypt_CheckedChanged);
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.overHetSpelToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Text = "Help";
             // 
-            // label2
+            // overHetSpelToolStripMenuItem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 96);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Password";
+            this.overHetSpelToolStripMenuItem.Name = "overHetSpelToolStripMenuItem";
+            this.overHetSpelToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.overHetSpelToolStripMenuItem.Text = "Over het spel";
+            this.overHetSpelToolStripMenuItem.Click += new System.EventHandler(this.overHetSpelToolStripMenuItem_Click);
             // 
-            // tbPassword
+            // A1
             // 
-            this.tbPassword.Location = new System.Drawing.Point(112, 93);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(253, 22);
-            this.tbPassword.TabIndex = 6;
+            this.A1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A1.Location = new System.Drawing.Point(23, 43);
+            this.A1.Name = "A1";
+            this.A1.Size = new System.Drawing.Size(75, 75);
+            this.A1.TabIndex = 1;
+            this.A1.UseVisualStyleBackColor = true;
+            this.A1.Click += new System.EventHandler(this.button_click);
             // 
-            // btStart
+            // C3
             // 
-            this.btStart.Location = new System.Drawing.Point(16, 138);
-            this.btStart.Name = "btStart";
-            this.btStart.Size = new System.Drawing.Size(687, 57);
-            this.btStart.TabIndex = 7;
-            this.btStart.Text = "Start";
-            this.btStart.UseVisualStyleBackColor = true;
-            this.btStart.Click += new System.EventHandler(this.btStart_Click);
+            this.C3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3.Location = new System.Drawing.Point(185, 205);
+            this.C3.Name = "C3";
+            this.C3.Size = new System.Drawing.Size(75, 75);
+            this.C3.TabIndex = 2;
+            this.C3.UseVisualStyleBackColor = true;
+            this.C3.Click += new System.EventHandler(this.button_click);
             // 
-            // Form1
+            // C2
+            // 
+            this.C2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C2.Location = new System.Drawing.Point(104, 205);
+            this.C2.Name = "C2";
+            this.C2.Size = new System.Drawing.Size(75, 75);
+            this.C2.TabIndex = 3;
+            this.C2.UseVisualStyleBackColor = true;
+            this.C2.Click += new System.EventHandler(this.button_click);
+            // 
+            // C1
+            // 
+            this.C1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C1.Location = new System.Drawing.Point(23, 205);
+            this.C1.Name = "C1";
+            this.C1.Size = new System.Drawing.Size(75, 75);
+            this.C1.TabIndex = 4;
+            this.C1.UseVisualStyleBackColor = true;
+            this.C1.Click += new System.EventHandler(this.button_click);
+            // 
+            // B3
+            // 
+            this.B3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B3.Location = new System.Drawing.Point(185, 124);
+            this.B3.Name = "B3";
+            this.B3.Size = new System.Drawing.Size(75, 75);
+            this.B3.TabIndex = 5;
+            this.B3.UseVisualStyleBackColor = true;
+            this.B3.Click += new System.EventHandler(this.button_click);
+            // 
+            // A3
+            // 
+            this.A3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A3.Location = new System.Drawing.Point(185, 43);
+            this.A3.Name = "A3";
+            this.A3.Size = new System.Drawing.Size(75, 75);
+            this.A3.TabIndex = 6;
+            this.A3.UseVisualStyleBackColor = true;
+            this.A3.Click += new System.EventHandler(this.button_click);
+            // 
+            // B2
+            // 
+            this.B2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B2.Location = new System.Drawing.Point(104, 124);
+            this.B2.Name = "B2";
+            this.B2.Size = new System.Drawing.Size(75, 75);
+            this.B2.TabIndex = 7;
+            this.B2.UseVisualStyleBackColor = true;
+            this.B2.Click += new System.EventHandler(this.button_click);
+            // 
+            // B1
+            // 
+            this.B1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B1.Location = new System.Drawing.Point(23, 124);
+            this.B1.Name = "B1";
+            this.B1.Size = new System.Drawing.Size(75, 75);
+            this.B1.TabIndex = 8;
+            this.B1.UseVisualStyleBackColor = true;
+            this.B1.Click += new System.EventHandler(this.button_click);
+            // 
+            // A2
+            // 
+            this.A2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A2.Location = new System.Drawing.Point(104, 43);
+            this.A2.Name = "A2";
+            this.A2.Size = new System.Drawing.Size(75, 75);
+            this.A2.TabIndex = 9;
+            this.A2.UseVisualStyleBackColor = true;
+            this.A2.Click += new System.EventHandler(this.button_click);
+            // 
+            // BoterKaasEieren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 224);
-            this.Controls.Add(this.btStart);
-            this.Controls.Add(this.tbPassword);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.rbDecrypt);
-            this.Controls.Add(this.rbEncrypt);
-            this.Controls.Add(this.btBrowse);
-            this.Controls.Add(this.tbPath);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Bestand Encryptie";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ClientSize = new System.Drawing.Size(286, 301);
+            this.Controls.Add(this.A2);
+            this.Controls.Add(this.B1);
+            this.Controls.Add(this.B2);
+            this.Controls.Add(this.A3);
+            this.Controls.Add(this.B3);
+            this.Controls.Add(this.C1);
+            this.Controls.Add(this.C2);
+            this.Controls.Add(this.C3);
+            this.Controls.Add(this.A1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "BoterKaasEieren";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BoterKaasEieren";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,14 +214,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbPath;
-        private System.Windows.Forms.Button btBrowse;
-        private System.Windows.Forms.RadioButton rbEncrypt;
-        private System.Windows.Forms.RadioButton rbDecrypt;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbPassword;
-        private System.Windows.Forms.Button btStart;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem overHetSpelToolStripMenuItem;
+        private System.Windows.Forms.Button A1;
+        private System.Windows.Forms.Button C3;
+        private System.Windows.Forms.Button C2;
+        private System.Windows.Forms.Button C1;
+        private System.Windows.Forms.Button B3;
+        private System.Windows.Forms.Button A3;
+        private System.Windows.Forms.Button B2;
+        private System.Windows.Forms.Button B1;
+        private System.Windows.Forms.Button A2;
     }
 }
 
